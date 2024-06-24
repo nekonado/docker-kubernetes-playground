@@ -3,6 +3,7 @@ version: "3.9"
 services:
   echo:
     # image: ghcr.io/gihyodocker/echo:v0.1.0
+    # image: ch02/echo:latest
     build: .
     ports:
       - 9000:8080
