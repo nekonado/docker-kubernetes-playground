@@ -3,6 +3,7 @@ version: "3.9"
 services:
   echo:
     image: ghcr.io/gihyodocker/echo:v0.1.0
+    container_name: echo
 
   nginx:
     build: ./nginx
@@ -10,3 +11,4 @@ services:
       - echo
     ports:
       - "9000:80"
+    container_name: nginx
