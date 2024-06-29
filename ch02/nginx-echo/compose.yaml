@@ -7,8 +7,8 @@ services:
 
   nginx:
     build: ./nginx
+    container_name: nginx
     depends_on:
       - echo
     ports:
       - "9000:80"
-    container_name: nginx
