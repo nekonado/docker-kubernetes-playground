@@ -1,0 +1,12 @@
+# docker compose run --rm volume-testで実行
+version: "3.9"
+
+services:
+  volume-test:
+    build: .
+    container_name: volume-test
+    volumes:
+      - .:/var/local/ch03/
+    tty: true
+    stdin_open: true
+    command: bash
